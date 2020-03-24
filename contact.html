@@ -3,6 +3,7 @@
         
     <head>
         <link rel="stylesheet" type="text/css" href="script.css">
+        <link rel="stylesheet" type="text/css" href="styleContact.css">
         <title>Page Title</title>
     </head>
 
@@ -18,13 +19,33 @@
         </section>
         <section id="content">
             <div class="header">
-                <a href="#items"><div id="downBtn"></div></a>
+                <a href="#main"><div id="downBtn"></div></a>
                 <h1>Contact</h1>
             </div>
-
+                <div id="main">
+                    <p>
+                        Heeft u vragen voor ons? Bent u tegen problemen gelopen op onze website?<br>
+                        Meld het hierdoor, vul uw Voornaam, Mail adres en uw bericht in. En wij zorgen ervoor dat u binnen 48 uur een reactie terug krijgt.
+                    </p>
+                    <hr>
+                    <div class="container">
+                        <form>
+                          <label>Voornaam</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Vul hier uw naam in...">
+                      
+                          <label>E-Mail</label>
+                          <input type="text" id="lname" name="lastname" placeholder="Vul hier uw E-Mail in...">
+                
+                          <label>Vraag/Probleem</label>
+                          <textarea id="subject" name="subject" placeholder="Uw vraag of prbleem melden..." style="height:200px"></textarea>
+                      
+                          <input type="submit" value="Verzend" id='submitBtn'>
+                        </form>
+                      </div>
+                </div>
             </div>
             <div id="footer">
-                <p>Mauris congue, arcu quis egestas egestas, lorem orci venenatis nibh.</p>
+                <p>&copy; TechBrothers | Website door Studio Website Makers</p>
             </div>
         </section>
     </body>
