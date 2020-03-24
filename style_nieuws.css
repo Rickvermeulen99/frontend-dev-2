@@ -1,0 +1,140 @@
+/* global styling */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/Background-body.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* header / navbar */
+#navbar li a:hover{
+    color: #634884!important;
+}
+#menuList{
+    list-style: none;
+    font-size: 26px;
+    padding-left: 20px;
+}
+#menuList li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+#menuList li a{
+    text-decoration: none;
+    color: black;
+}
+#menuList li a:active{
+    color: grey;
+}
+#menuList li a:visited{
+    color: black;
+}
+#navbar{
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    float: left;
+    background-color: #E5C890;
+}
+#logo{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.header{
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+}
+.header h1{
+    color: white;
+    line-height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+}
+#downBtn{
+    width: 40px;
+    height: 40px;
+    background-image: url(images/152419.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 90vh;
+    filter: invert(100%);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating{
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+
+
+/* page content */
+#content{
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    float: right;
+}
+#items{
+    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#items ul{
+    justify-content: center;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+#items li{
+    background-color: #E5C890;
+    display: block;
+    padding: 20px;
+    margin: 30px;
+    width: 15%;
+    float: left;
+}
+#items img{
+    width: 100%;
+}
+#items .itemcount_2 li{
+    width: 40%;
+}
+ 
+/* footer styling */
+#footer{
+    height: 100px;
+    background-color: #ccac96;
+    color: #654b7f;
+    margin: 0;
+    padding: 0;
+}
+#footer p{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
