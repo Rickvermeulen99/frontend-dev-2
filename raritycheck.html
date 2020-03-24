@@ -21,11 +21,32 @@
                 <a href="#items"><div id="downBtn"></div></a>
                 <h1>Zeldzaamheid Check</h1>
             </div>
-            <div>
+            <div id="items">
+                <ul>
+                    <li>
+                        <label for="merk">Kies een merk:</label>
 
+                        <select id="merk">
+                        <option value="Acer">Acer</option>
+                        <option value="Apple">Apple</option>
+                        <option value="HP">HP</option>
+                        <option value="Asus">Asus</option>
+                        </select>       
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                       <form> is het een limited edition?<br>
+                           <label for="ja">ja</label>
+                           <input type="radio" name="yes" id="yes" value="yes"><br>
+                           <label for="nee">nee</label>
+                           <input type="radio" name="no" id="no" value="no"><br>
+                       </form>   
+                    </li>
+                </ul>
             </div>
             <div id="footer">
-                <p>Mauris congue, arcu quis egestas egestas, lorem orci venenatis nibh.</p>
+                <p>&copy; TechBrothers | Website door Studio Website Makers</p>
             </div>
         </section>
     </body>
