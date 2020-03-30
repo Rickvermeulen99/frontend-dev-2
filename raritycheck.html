@@ -24,7 +24,8 @@
             <div id="items">
                 <ul>
                     <li>
-                        <label for="merk">Kies een merk:</label>
+                        <form> 
+                        <label for="merk">Selecteer een merk:</label>
 
                         <select id="merk">
                         <option value="Acer">Acer</option>
@@ -36,14 +37,24 @@
                 </ul>
                 <ul>
                     <li>
-                       <form> is het een limited edition?<br>
-                           <label for="ja">ja</label>
-                           <input type="radio" name="yes" id="yes" value="yes"><br>
-                           <label for="nee">nee</label>
-                           <input type="radio" name="no" id="no" value="no"><br>
-                       </form>   
+                        <label for="jaartal">Kies een jaartal:</label>
+                        <input type="text" id="jaartal" value="">
                     </li>
                 </ul>
+                <ul>
+                    <li>
+                       is het een limited edition?<br>
+                          ja: <input type="radio" id="Yes" name="Yes" value="Yes"><br>
+                           Nee: <input type="radio" id="No" name="No" value="No">  
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <input type="Submit" value="Zoeken"> 
+                    </li>
+                </ul>
+             </form>  
+                       
             </div>
             <div id="footer">
                 <p>&copy; TechBrothers | Website door Studio Website Makers</p>
