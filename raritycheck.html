@@ -3,6 +3,7 @@
         
     <head>
         <link rel="stylesheet" type="text/css" href="script.css">
+        <script src="rarity.js" defer></script>
         <title>Page Title</title>
     </head>
 
@@ -22,39 +23,32 @@
                 <h1>Zeldzaamheid Check</h1>
             </div>
             <div id="items">
+                <form>
                 <ul>
                     <li>
-                        <form> 
-                        <label for="merk">Selecteer een merk:</label>
+                        <label for="brand">Selecteer een merk:</label>
 
-                        <select id="merk">
+                        <select id="brands">
                         <option value="Acer">Acer</option>
                         <option value="Apple">Apple</option>
                         <option value="HP">HP</option>
-                        <option value="Asus">Asus</option>
-                        </select>       
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <label for="jaartal">Kies een jaartal:</label>
-                        <input type="text" id="jaartal" value="">
-                    </li>
-                </ul>
-                <ul>
-                    <li>
+                        <option value="Asus">Peaq</option>
+                        </select><br><br>       
+                        <label for="years">Aantal jaren oud :</label>
+                        <input type="text" id="Years" value=""><br><br>
                        is het een limited edition?<br>
-                          ja: <input type="radio" id="Yes" name="Yes" value="Yes"><br>
-                           Nee: <input type="radio" id="No" name="No" value="No">  
+                           ja: <input type="radio" id="Yes" name="Yes" value="Yes"><br>
+                           Nee: <input type="radio" id="No" name="No" value="No"> <br><br> 
+                        <input type="button" value="checken" onclick= OnCalculateSubmit()> 
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <input type="Submit" value="Zoeken"> 
-                    </li>
-                </ul>
-             </form>  
-                       
+             </form>
+             <ul>
+                <li>
+                    <p id="result"></p>
+                </li>
+            </ul> 
+            
             </div>
             <div id="footer">
                 <p>&copy; TechBrothers | Website door Studio Website Makers</p>
